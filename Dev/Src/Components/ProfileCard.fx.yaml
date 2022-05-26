@@ -1,0 +1,81 @@
+ProfileCard As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    FullName: ="Full Name"
+    Height: =80
+    Image: =SampleImage
+    Title: ="Job Title"
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Image1_1 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderColor: =Image1_1.BorderColor
+        FocusedBorderThickness: =4
+        Height: =60
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: =ProfileCard.Image
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =59
+        X: =10
+        Y: =10
+        ZIndex: =1
+
+    Label4_2 As label:
+        AutoHeight: =true
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        FocusedBorderColor: =Label4_2.BorderColor
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =Semibold
+        Height: =35
+        HoverBorderColor: =Label4_2.BorderColor
+        HoverColor: =Label4_2.Color
+        HoverFill: =Label4_2.Fill
+        LineHeight: |
+            =1.0
+        PressedBorderColor: =Label4_2.BorderColor
+        PressedColor: =Label4_2.Color
+        PressedFill: =Label4_2.Fill
+        Size: =16
+        Text: =ProfileCard.FullName
+        Width: =491
+        X: =80
+        Y: =10
+        ZIndex: =2
+
+    Label4_3 As label:
+        AutoHeight: =true
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        FocusedBorderColor: =Label4_3.BorderColor
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =24
+        HoverBorderColor: =Label4_3.BorderColor
+        HoverColor: =Label4_3.Color
+        HoverFill: =Label4_3.Fill
+        PressedBorderColor: =Label4_3.BorderColor
+        PressedColor: =Label4_3.Color
+        PressedFill: =Label4_3.Fill
+        Size: =11
+        Text: =ProfileCard.Title
+        Width: =491
+        X: =80
+        Y: =Label4_2.Y + Label4_2.Height
+        ZIndex: =3
+

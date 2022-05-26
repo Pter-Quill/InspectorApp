@@ -1,0 +1,108 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "contoso_permits",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "contoso_permit",
+    "MaxGetRowsCount": 500,
+    "Name": "Permits",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "contoso_BuildSite": "Build Site",
+      "contoso_Contact": "Contact",
+      "contoso_expirationdate": "Expiration Date",
+      "contoso_name": "Name",
+      "contoso_newsize": "New Size",
+      "contoso_permit_AsyncOperations": "System Jobs",
+      "contoso_permit_BulkDeleteFailures": "Bulk Delete Failures",
+      "contoso_Permit_contoso_Permit_contoso_Ins": "Inspections",
+      "contoso_permit_DuplicateBaseRecord": "Duplicate Records (contoso_permit_DuplicateBaseRecord)",
+      "contoso_permit_DuplicateMatchingRecord": "Duplicate Records (contoso_permit_DuplicateMatchingRecord)",
+      "contoso_permit_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "contoso_permit_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "contoso_permit_ProcessSession": "Process Sessions",
+      "contoso_permit_SyncErrors": "Sync Errors",
+      "contoso_permitid": "Permit",
+      "contoso_PermitType": "Permit Type",
+      "contoso_startdate": "Start Date",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Permits",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Permits (Views)",
+    "Name": "_contoso_permit_views",
+    "RelatedEntityName": "Permits",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "080c2bf2-4827-48d9-bc1e-b87aca813e93": "Permit Associated View",
+      "0cf9092d-0b57-47d9-9309-e9608bae7558": "Active Permits",
+      "951387b0-7ad7-4d02-ac57-4e4f413754e9": "Permit Advanced Find View",
+      "98af1592-3550-42c3-a66c-8fa2ed13dcb8": "Permit Lookup View",
+      "cafaf85b-d619-47be-b90a-1e478eeb21b5": "Inactive Permits"
+    }
+  },
+  {
+    "DisplayName": "Status (Permits)",
+    "Name": "contoso_permit_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Permits"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Permits",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Permits)",
+    "Name": "contoso_permit_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive",
+      "463270000": "Locked",
+      "463270001": "Completed",
+      "463270002": "Canceled",
+      "463270003": "Expired"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Permits"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Permits",
+    "Type": "OptionSetInfo"
+  }
+]

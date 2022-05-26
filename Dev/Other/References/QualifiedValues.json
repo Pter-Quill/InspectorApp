@@ -1,0 +1,18 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_contoso_permit_forms",
+      "Namespace": "Permits (Forms)",
+      "Values": {
+        "Information": "c2253a57-fbea-47bc-9032-b68a47655e01"
+      }
+    },
+    {
+      "Kind": "default.cds_contoso_inspection_forms",
+      "Namespace": "Inspections (Forms)",
+      "Values": {
+        "Information": "ab5e6175-1a2c-4ad2-a61b-a8aba049f929"
+      }
+    }
+  ]
+}
